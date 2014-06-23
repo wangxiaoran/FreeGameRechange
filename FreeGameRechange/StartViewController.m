@@ -11,6 +11,7 @@
 #import "FreeGradeViewController.h"
 #import "ActivityCenterViewController.h"
 #import "UserCenterViewController.h"
+#import "LoginViewController.h"
 static StartViewController* startViewController;
 @interface StartViewController ()
 
@@ -36,9 +37,6 @@ static StartViewController* startViewController;
         // Custom initialization
     }
     return self;
-}
--(UIStatusBarStyle)preferredStatusBarStyle{
-    return UIStatusBarStyleLightContent;
 }
 - (void)viewDidLoad
 {
@@ -77,7 +75,8 @@ static StartViewController* startViewController;
 }
 - (void)showLoginViewController
 {
-    
+    LoginViewController * loginViewC = [[LoginViewController alloc]init];
+    [self presentViewController:[[UINavigationController alloc] initWithRootViewController:loginViewC] animated:YES completion:nil];
 }
 /*
 #pragma mark - Navigation

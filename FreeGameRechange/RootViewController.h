@@ -11,4 +11,6 @@
 @interface RootViewController : UIViewController
 - (void)setBackButtenWithTarget:(SEL)selector;
 + (void)showAutoMissHubWithTitle:(NSString*)title Image:(UIImage*)image;
++ (void)showHubWithTitle:(NSString*)title Image:(UIImage*)image;
++ (void)hideWindowHub;
 @end

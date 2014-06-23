@@ -77,6 +77,11 @@
 		723405C6195135850096201B /* MagicalRecord+ShorthandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 723405A9195135850096201B /* MagicalRecord+ShorthandSupport.m */; };
 		723405C7195135850096201B /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 723405AB195135850096201B /* MagicalRecord.m */; };
 		723405C9195135D20096201B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723405C8195135D20096201B /* CoreData.framework */; };
+		72875C081957BB23000AED34 /* tab-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 72875C061957BB23000AED34 /* tab-background.png */; };
+		72875C091957BB23000AED34 /* tab-highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 72875C071957BB23000AED34 /* tab-highlight.png */; };
+		72875C0C1957CBB3000AED34 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72875C0B1957CBB3000AED34 /* LoginViewController.m */; };
+		72875C0F1957D765000AED34 /* topinfo.png in Resources */ = {isa = PBXBuildFile; fileRef = 72875C0E1957D765000AED34 /* topinfo.png */; };
+		72875C121957DF2C000AED34 /* loging_access_log.png in Resources */ = {isa = PBXBuildFile; fileRef = 72875C111957DF2C000AED34 /* loging_access_log.png */; };
 		72D2DD351952AB6200F7C4B8 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D2DD341952AB6200F7C4B8 /* StartViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -216,6 +221,12 @@
 		723405AC195135850096201B /* MagicalRecordShorthand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalRecordShorthand.h; sourceTree = "<group>"; };
 		723405AD195135850096201B /* CoreData+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreData+MagicalRecord.h"; sourceTree = "<group>"; };
 		723405C8195135D20096201B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		72875C061957BB23000AED34 /* tab-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab-background.png"; sourceTree = "<group>"; };
+		72875C071957BB23000AED34 /* tab-highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab-highlight.png"; sourceTree = "<group>"; };
+		72875C0A1957CBB3000AED34 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		72875C0B1957CBB3000AED34 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		72875C0E1957D765000AED34 /* topinfo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topinfo.png; sourceTree = "<group>"; };
+		72875C111957DF2C000AED34 /* loging_access_log.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loging_access_log.png; sourceTree = "<group>"; };
 		72D2DD331952AB6200F7C4B8 /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
 		72D2DD341952AB6200F7C4B8 /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -332,6 +343,7 @@
 				7214C7E91953DF040058E26D /* ActivityCenterViewController.m */,
 				7214C7EB1953DF150058E26D /* UserCenterViewController.h */,
 				7214C7EC1953DF150058E26D /* UserCenterViewController.m */,
+				72875C0D1957CBC2000AED34 /* Login */,
 				7214C80719542DE10058E26D /* CoreData */,
 				72174872194FFD4600F9A962 /* OpenSource */,
 				72D2DD3119528F5300F7C4B8 /* Image */,
@@ -538,9 +550,38 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		72875C051957BAB0000AED34 /* RobCard */ = {
+			isa = PBXGroup;
+			children = (
+				72875C061957BB23000AED34 /* tab-background.png */,
+				72875C071957BB23000AED34 /* tab-highlight.png */,
+			);
+			name = RobCard;
+			sourceTree = "<group>";
+		};
+		72875C0D1957CBC2000AED34 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				72875C0A1957CBB3000AED34 /* LoginViewController.h */,
+				72875C0B1957CBB3000AED34 /* LoginViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		72875C101957DDA7000AED34 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				72875C111957DF2C000AED34 /* loging_access_log.png */,
+				72875C0E1957D765000AED34 /* topinfo.png */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
 		72D2DD3119528F5300F7C4B8 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				72875C101957DDA7000AED34 /* Login */,
+				72875C051957BAB0000AED34 /* RobCard */,
 				7214C7FA1953EB8D0058E26D /* Naviigation */,
 				7214C7D01953D5C20058E26D /* Tabbar */,
 			);
@@ -630,9 +671,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7214C7F01953E6BF0058E26D /* noise-dark-blue.png in Resources */,
+				72875C081957BB23000AED34 /* tab-background.png in Resources */,
+				72875C0F1957D765000AED34 /* topinfo.png in Resources */,
 				7214C7F71953E7430058E26D /* Card-Icon.png in Resources */,
 				7214C7F81953E7430058E26D /* Grade-Icon.png in Resources */,
 				7214C7F11953E6BF0058E26D /* noise-dark-gray.png in Resources */,
+				72875C091957BB23000AED34 /* tab-highlight.png in Resources */,
+				72875C121957DF2C000AED34 /* loging_access_log.png in Resources */,
 				7217484E194FF47D00F9A962 /* InfoPlist.strings in Resources */,
 				7214C7F61953E7430058E26D /* activity-Icon.png in Resources */,
 				7214C8021954153C0058E26D /* BackButten.png in Resources */,
@@ -686,6 +731,7 @@
 				72174887194FFDA000F9A962 /* UIViewController+AKTabBarController.m in Sources */,
 				723405C5195135850096201B /* MagicalRecord+Setup.m in Sources */,
 				72174886194FFDA000F9A962 /* UINavigationController+AKTabBarController.m in Sources */,
+				72875C0C1957CBB3000AED34 /* LoginViewController.m in Sources */,
 				723405B9195135850096201B /* NSManagedObject+MagicalRequests.m in Sources */,
 				723405AF195135850096201B /* NSAttributeDescription+MagicalDataImport.m in Sources */,
 				7234051219512CD00096201B /* AFSecurityPolicy.m in Sources */,

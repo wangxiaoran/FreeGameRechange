@@ -23,7 +23,6 @@
     }
     return self;
 }
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -57,6 +56,7 @@
         titleLable.text = self.title;
         titleLable;
     });
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)didReceiveMemoryWarning
@@ -68,13 +68,18 @@
 {
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:({
         UIButton * BackButten = [UIButton buttonWithType:UIButtonTypeCustom];
-        BackButten.frame = CGRectMake(0.0, 0.0, 71, 35);
+        BackButten.frame = CGRectMake(0.0, 0.0, 50, 30);
         [BackButten setBackgroundImage:[UIImage imageNamed:@"BackButten"] forState:UIControlStateNormal];
         [BackButten addTarget:self action:selector forControlEvents:UIControlEventTouchUpInside];
         BackButten;
     })];
 }
 + (void)showAutoMissHubWithTitle:(NSString*)title Image:(UIImage*)image
+{
+    [self showHubWithTitle:title Image:image];
+    [RootViewController performSelector:@selector(hideWindowHub) withObject:nil afterDelay:1.0f];
+}
++ (void)showHubWithTitle:(NSString*)title Image:(UIImage*)image
 {
     UIWindow* window = [UIApplication sharedApplication].keyWindow;
     UIView * showWindowView = [window viewWithTag:10086];
@@ -102,9 +107,8 @@
     [showWindowView addSubview:showWindowLabel];
     
     [window addSubview:showWindowView];
-    [RootViewController performSelector:@selector(hideWindowView) withObject:nil afterDelay:1.0f];
 }
-+ (void)hideWindowView
++ (void)hideWindowHub
 {
     UIWindow* window = [UIApplication sharedApplication].keyWindow;
     UIView * showWindowView = [window viewWithTag:showWindowViewTag];
