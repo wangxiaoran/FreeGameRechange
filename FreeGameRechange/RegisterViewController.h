@@ -9,5 +9,5 @@
 #import "RootViewController.h"
 
 @interface RegisterViewController : RootViewController
-
+@property (nonatomic,retain)NSString * phoneNo;
 @end
