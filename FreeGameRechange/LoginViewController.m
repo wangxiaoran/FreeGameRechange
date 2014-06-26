@@ -7,6 +7,8 @@
 //
 
 #import "LoginViewController.h"
+#import "FindPasswordViewController.h"
+#import "CheckoutViewController.h"
 
 @interface LoginViewController ()<UITextFieldDelegate>
 @property (nonatomic,retain)UITextField * phoneNoTF;
@@ -81,9 +83,9 @@
     loginButton.frame = CGRectMake(20, 145,280, 35);
     [loginButton setTitle:@"登录" forState:UIControlStateNormal];
     [loginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    loginButton.titleLabel.font = [UIFont boldSystemFontOfSize:14];
+    loginButton.titleLabel.font = [UIFont boldSystemFontOfSize:16];
     
-    [loginButton setBackgroundColor:[UIColor blueColor]];
+    [loginButton setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"title_bg.png"]]];
     [loginButton addTarget:self action: @selector(loginButtonClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:loginButton];
     
@@ -127,14 +129,17 @@
 - (void)loginButtonClick
 {
     [[NSNotificationCenter defaultCenter]postNotificationName:FreeGameRechangeLoginSucceeded object:self userInfo:nil];
+    [self back];
 }
 - (void)registerClick
 {
-    
+    CheckoutViewController * checkoutVC = [[CheckoutViewController alloc]init];
+    [self.navigationController pushViewController:checkoutVC animated:YES];
 }
 - (void)forgetPasswordClick
 {
-    
+    FindPasswordViewController * findVC = [[FindPasswordViewController alloc]init];
+    [self.navigationController pushViewController:findVC animated:YES];
 }
 - (void)back
 {

@@ -77,6 +77,12 @@
 		723405C6195135850096201B /* MagicalRecord+ShorthandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 723405A9195135850096201B /* MagicalRecord+ShorthandSupport.m */; };
 		723405C7195135850096201B /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 723405AB195135850096201B /* MagicalRecord.m */; };
 		723405C9195135D20096201B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723405C8195135D20096201B /* CoreData.framework */; };
+		72661DD9195A6D87005439A8 /* FindPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72661DD8195A6D87005439A8 /* FindPasswordViewController.m */; };
+		72661DDC195A6EA3005439A8 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72661DDB195A6EA3005439A8 /* RegisterViewController.m */; };
+		72661DDE195A703C005439A8 /* modelinfo_c_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 72661DDD195A703C005439A8 /* modelinfo_c_bg.png */; };
+		72661DE0195A7A62005439A8 /* checkout.png in Resources */ = {isa = PBXBuildFile; fileRef = 72661DDF195A7A62005439A8 /* checkout.png */; };
+		72661DE3195A7E47005439A8 /* CheckoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72661DE2195A7E47005439A8 /* CheckoutViewController.m */; };
+		72661DEC195AACC8005439A8 /* TouchScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72661DEB195AACC8005439A8 /* TouchScrollView.m */; };
 		72875C081957BB23000AED34 /* tab-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 72875C061957BB23000AED34 /* tab-background.png */; };
 		72875C091957BB23000AED34 /* tab-highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 72875C071957BB23000AED34 /* tab-highlight.png */; };
 		72875C0C1957CBB3000AED34 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72875C0B1957CBB3000AED34 /* LoginViewController.m */; };
@@ -221,6 +227,16 @@
 		723405AC195135850096201B /* MagicalRecordShorthand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalRecordShorthand.h; sourceTree = "<group>"; };
 		723405AD195135850096201B /* CoreData+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreData+MagicalRecord.h"; sourceTree = "<group>"; };
 		723405C8195135D20096201B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		72661DD7195A6D87005439A8 /* FindPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindPasswordViewController.h; sourceTree = "<group>"; };
+		72661DD8195A6D87005439A8 /* FindPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindPasswordViewController.m; sourceTree = "<group>"; };
+		72661DDA195A6EA3005439A8 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		72661DDB195A6EA3005439A8 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		72661DDD195A703C005439A8 /* modelinfo_c_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = modelinfo_c_bg.png; sourceTree = "<group>"; };
+		72661DDF195A7A62005439A8 /* checkout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkout.png; sourceTree = "<group>"; };
+		72661DE1195A7E47005439A8 /* CheckoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckoutViewController.h; sourceTree = "<group>"; };
+		72661DE2195A7E47005439A8 /* CheckoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckoutViewController.m; sourceTree = "<group>"; };
+		72661DEA195AACC8005439A8 /* TouchScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchScrollView.h; sourceTree = "<group>"; };
+		72661DEB195AACC8005439A8 /* TouchScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchScrollView.m; sourceTree = "<group>"; };
 		72875C061957BB23000AED34 /* tab-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab-background.png"; sourceTree = "<group>"; };
 		72875C071957BB23000AED34 /* tab-highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab-highlight.png"; sourceTree = "<group>"; };
 		72875C0A1957CBB3000AED34 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -331,19 +347,8 @@
 				72174852194FF47D00F9A962 /* AppDelegate.h */,
 				72174853194FF47D00F9A962 /* AppDelegate.m */,
 				72174855194FF47D00F9A962 /* Images.xcassets */,
-				72D2DD331952AB6200F7C4B8 /* StartViewController.h */,
-				72D2DD341952AB6200F7C4B8 /* StartViewController.m */,
-				7214C7FD195403E80058E26D /* RootViewController.h */,
-				7214C7FE195403E80058E26D /* RootViewController.m */,
-				7214C7E21953DE210058E26D /* RobCardViewController.h */,
-				7214C7E31953DE210058E26D /* RobCardViewController.m */,
-				7214C7E51953DEAB0058E26D /* FreeGradeViewController.h */,
-				7214C7E61953DEAB0058E26D /* FreeGradeViewController.m */,
-				7214C7E81953DF040058E26D /* ActivityCenterViewController.h */,
-				7214C7E91953DF040058E26D /* ActivityCenterViewController.m */,
-				7214C7EB1953DF150058E26D /* UserCenterViewController.h */,
-				7214C7EC1953DF150058E26D /* UserCenterViewController.m */,
-				72875C0D1957CBC2000AED34 /* Login */,
+				72661DE9195AAC98005439A8 /* View */,
+				72661DE8195AAC61005439A8 /* Controller */,
 				7214C80719542DE10058E26D /* CoreData */,
 				72174872194FFD4600F9A962 /* OpenSource */,
 				72D2DD3119528F5300F7C4B8 /* Image */,
@@ -550,6 +555,35 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		72661DE8195AAC61005439A8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				72D2DD331952AB6200F7C4B8 /* StartViewController.h */,
+				72D2DD341952AB6200F7C4B8 /* StartViewController.m */,
+				7214C7FD195403E80058E26D /* RootViewController.h */,
+				7214C7FE195403E80058E26D /* RootViewController.m */,
+				7214C7E21953DE210058E26D /* RobCardViewController.h */,
+				7214C7E31953DE210058E26D /* RobCardViewController.m */,
+				7214C7E51953DEAB0058E26D /* FreeGradeViewController.h */,
+				7214C7E61953DEAB0058E26D /* FreeGradeViewController.m */,
+				7214C7E81953DF040058E26D /* ActivityCenterViewController.h */,
+				7214C7E91953DF040058E26D /* ActivityCenterViewController.m */,
+				7214C7EB1953DF150058E26D /* UserCenterViewController.h */,
+				7214C7EC1953DF150058E26D /* UserCenterViewController.m */,
+				72875C0D1957CBC2000AED34 /* Login */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		72661DE9195AAC98005439A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				72661DEA195AACC8005439A8 /* TouchScrollView.h */,
+				72661DEB195AACC8005439A8 /* TouchScrollView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		72875C051957BAB0000AED34 /* RobCard */ = {
 			isa = PBXGroup;
 			children = (
@@ -564,6 +598,12 @@
 			children = (
 				72875C0A1957CBB3000AED34 /* LoginViewController.h */,
 				72875C0B1957CBB3000AED34 /* LoginViewController.m */,
+				72661DE1195A7E47005439A8 /* CheckoutViewController.h */,
+				72661DE2195A7E47005439A8 /* CheckoutViewController.m */,
+				72661DDA195A6EA3005439A8 /* RegisterViewController.h */,
+				72661DDB195A6EA3005439A8 /* RegisterViewController.m */,
+				72661DD7195A6D87005439A8 /* FindPasswordViewController.h */,
+				72661DD8195A6D87005439A8 /* FindPasswordViewController.m */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -571,6 +611,8 @@
 		72875C101957DDA7000AED34 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				72661DDF195A7A62005439A8 /* checkout.png */,
+				72661DDD195A703C005439A8 /* modelinfo_c_bg.png */,
 				72875C111957DF2C000AED34 /* loging_access_log.png */,
 				72875C0E1957D765000AED34 /* topinfo.png */,
 			);
@@ -682,6 +724,8 @@
 				7214C7F61953E7430058E26D /* activity-Icon.png in Resources */,
 				7214C8021954153C0058E26D /* BackButten.png in Resources */,
 				72174856194FF47D00F9A962 /* Images.xcassets in Resources */,
+				72661DDE195A703C005439A8 /* modelinfo_c_bg.png in Resources */,
+				72661DE0195A7A62005439A8 /* checkout.png in Resources */,
 				72174883194FFDA000F9A962 /* AKTabBarController.bundle in Resources */,
 				7214C7F91953E7430058E26D /* User-Icon.png in Resources */,
 				7214C7FC1953EBB00058E26D /* title_bg.png in Resources */,
@@ -712,8 +756,10 @@
 				723405BB195135850096201B /* NSManagedObjectContext+MagicalRecord.m in Sources */,
 				72174885194FFDA000F9A962 /* AKTabBarView.m in Sources */,
 				723405B2195135850096201B /* NSObject+MagicalDataImport.m in Sources */,
+				72661DEC195AACC8005439A8 /* TouchScrollView.m in Sources */,
 				7234050F19512CD00096201B /* AFHTTPRequestOperationManager.m in Sources */,
 				723405BA195135850096201B /* NSManagedObjectContext+MagicalObserving.m in Sources */,
+				72661DE3195A7E47005439A8 /* CheckoutViewController.m in Sources */,
 				723405C6195135850096201B /* MagicalRecord+ShorthandSupport.m in Sources */,
 				72D2DD351952AB6200F7C4B8 /* StartViewController.m in Sources */,
 				723405BD195135850096201B /* NSManagedObjectContext+MagicalThreading.m in Sources */,
@@ -734,6 +780,7 @@
 				72875C0C1957CBB3000AED34 /* LoginViewController.m in Sources */,
 				723405B9195135850096201B /* NSManagedObject+MagicalRequests.m in Sources */,
 				723405AF195135850096201B /* NSAttributeDescription+MagicalDataImport.m in Sources */,
+				72661DDC195A6EA3005439A8 /* RegisterViewController.m in Sources */,
 				7234051219512CD00096201B /* AFSecurityPolicy.m in Sources */,
 				7214C806195428960058E26D /* KGStatusBar.m in Sources */,
 				7214C7ED1953DF150058E26D /* UserCenterViewController.m in Sources */,
@@ -743,6 +790,7 @@
 				723405C2195135850096201B /* MagicalRecord+ErrorHandling.m in Sources */,
 				723405B7195135850096201B /* NSManagedObject+MagicalFinders.m in Sources */,
 				723405B0195135850096201B /* NSEntityDescription+MagicalDataImport.m in Sources */,
+				72661DD9195A6D87005439A8 /* FindPasswordViewController.m in Sources */,
 				723405B8195135850096201B /* NSManagedObject+MagicalRecord.m in Sources */,
 				7234051119512CD00096201B /* AFNetworkReachabilityManager.m in Sources */,
 				7214C7EA1953DF040058E26D /* ActivityCenterViewController.m in Sources */,
